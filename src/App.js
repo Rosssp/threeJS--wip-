@@ -1,16 +1,21 @@
 import "./App.css";
-import FloorBlock from "./block/Floor/FloorBlock";
-
+import Header from "./layout/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./layout/footer/Footer";
-import Header from "./layout/header/Header";
+import Block from "./block/block/Block";
+import Scene from "./block/flag/Scene";
 
 function App() {
     return (
         <div className="App">
             <Header />
-            {/* <Main /> */}
-            <FloorBlock />
+            {/* <Block /> */}
+            <div style={{ position: "relative", width: "100vw" }}>
+                <div style={{ position: "absolute", width: "100vw" }}>
+                    <Scene />
+                </div>
+                <Main />
+            </div>
             <Footer />
         </div>
     );
