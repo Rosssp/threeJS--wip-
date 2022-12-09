@@ -54,7 +54,7 @@ const Wave = () => {
     return (
         <mesh>
             <planeGeometry args={[2, 1.0, 16, 16]} />
-            <waveShaderMaterial uColor={"gray"} ref={ref} wireframe />
+            <waveShaderMaterial uColor={"darkgray"} ref={ref} wireframe />
         </mesh>
     );
 };
